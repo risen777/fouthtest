@@ -211,7 +211,7 @@ public class CalcPage {
     }
 
 
-
+//выбор поля
 
     public void choiceSex(String sex){
 
