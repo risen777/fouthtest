@@ -12,7 +12,8 @@ import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import steps.BaseSteps;
 
-import static org.testng.AssertJUnit.assertEquals;
+import static org.junit.Assert.assertEquals;
+
 
 /**
  * Created by Sergey
@@ -58,7 +59,8 @@ public class CalcPage {
 
     @FindBy(name = "male")
     WebElement sex;
-
+    @FindBy(name = "email")
+    WebElement email;
 
     @FindBy(xpath = "//span[text() = 'Оформить']")
     WebElement sendNext;
@@ -131,6 +133,9 @@ public class CalcPage {
             case "Кем выдан":
                 fillField(issuePlace, value);
                 break;
+            case "Электронная почта":
+                fillField(email, value);
+                break;
             default:
                 throw new AssertionError("Поле '" + fieldName + "' не объявлено на странице");
         }
@@ -199,6 +204,11 @@ public class CalcPage {
             case "Кем выдан":
 
                 assertEquals(valueCheck, issuePlace.getAttribute("value"));
+
+                break;
+            case "Электронная почта":
+
+                assertEquals(valueCheck, email.getAttribute("value"));
 
                 break;
 

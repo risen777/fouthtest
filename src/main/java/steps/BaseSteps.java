@@ -6,7 +6,7 @@ import org.junit.BeforeClass;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.testng.annotations.AfterClass;
+import org.junit.AfterClass;
 
 import pages.BasePage;
 import ru.yandex.qatools.allure.annotations.Step;
@@ -54,7 +54,7 @@ public class BaseSteps {
         driver.manage().window().maximize();
     }
 
-    @AfterClass
+   @AfterClass
     public static void tearDown() throws Exception {
         driver.quit();
     }

@@ -5,8 +5,6 @@ import pages.CalcPage;
 
 import java.util.HashMap;
 
-import static org.junit.Assert.assertTrue;
-import static org.testng.AssertJUnit.assertEquals;
 
 /**
  * Created by Sergey

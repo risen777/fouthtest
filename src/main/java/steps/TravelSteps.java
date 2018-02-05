@@ -13,6 +13,5 @@ public class TravelSteps extends BaseSteps {
     public void stepSendAppButton(){
         new TravelPage(driver).sendButton.click();
 
-
     }
 }

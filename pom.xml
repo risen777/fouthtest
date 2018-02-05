@@ -89,7 +89,7 @@
 
                 <artifactId>allure-maven-plugin</artifactId>
 
-                <version>2.3</version>
+                <version>2.5</version>
 
                 <executions>
 
@@ -157,11 +157,7 @@
             <version>${aspectj.version}</version>
 
         </dependency>
-        <dependency>
-            <groupId>org.testng</groupId>
-            <artifactId>testng</artifactId>
-            <version>6.13.1</version>
-        </dependency>
+
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>

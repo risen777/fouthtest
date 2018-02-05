@@ -19,7 +19,7 @@ public class TravelPage {
     public TravelPage(WebDriver driver) {
         PageFactory.initElements(driver, this);
         Wait<WebDriver> wait=new WebDriverWait(driver,5,1000);
-        wait.until(ExpectedConditions.visibilityOf(sendButton)).click();
+        wait.until(ExpectedConditions.visibilityOf(sendButton));
     }
 
 }
