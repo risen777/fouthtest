@@ -9,7 +9,7 @@ import java.util.HashMap;
 /**
  * Created by Sergey
  */
-public class CalcSteps extends BaseSteps {
+public class CalcSteps {
 
 
 
@@ -58,21 +58,21 @@ public class CalcSteps extends BaseSteps {
 
     @Step("Оформить")
     public void clickSendNext() {
-        CalcPage calcPage = new CalcPage(driver);
+        CalcPage calcPage = new CalcPage(BaseSteps.getDriver());
         calcPage.clickSendNext();
     }
 
 
     @Step("Минимальная сумма {0}")
     public void stepChoice(String menuItem) {
-        CalcPage calcPage = new CalcPage(driver);
+        CalcPage calcPage = new CalcPage(BaseSteps.getDriver());
         calcPage.clickMinSum();
 
     }
 
     @Step("Продолжить")
     public void sendButtonNext() {
-        CalcPage calcPage = new CalcPage(driver);
+        CalcPage calcPage = new CalcPage(BaseSteps.getDriver());
         calcPage.sendButtonNext();
     }
 

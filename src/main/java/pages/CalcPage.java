@@ -269,8 +269,8 @@ public class CalcPage {
 
 
     public CalcPage(WebDriver driver) {
-        PageFactory.initElements(driver, this);
-        (new WebDriverWait(driver, 10))
+        PageFactory.initElements(BaseSteps.getDriver(), this);
+        (new WebDriverWait(BaseSteps.getDriver(), 10))
                 .until(ExpectedConditions.visibilityOf(title));
         this.driver = driver;
     }

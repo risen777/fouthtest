@@ -21,7 +21,7 @@ public class MainPage {
 
 
     public MainPage(WebDriver driver) {
-        PageFactory.initElements(driver, this);
+        PageFactory.initElements(BaseSteps.getDriver(), this);
     }
 
     public void selectMainMenu(String menuItem) {

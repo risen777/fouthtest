@@ -6,12 +6,12 @@ import pages.TravelPage;
 /**
  * Created by Sergey
  */
-public class TravelSteps extends BaseSteps {
+public class TravelSteps{
 
 
     @Step("выполнено нажатие на кнопку отправить заявку")
     public void stepSendAppButton(){
-        new TravelPage(driver).sendButton.click();
+        new TravelPage(BaseSteps.getDriver()).sendButton.click();
 
     }
 }

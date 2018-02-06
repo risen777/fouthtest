@@ -16,7 +16,7 @@ public class BasePage {
     public BasePage(WebDriver driver) {
 
 
-        PageFactory.initElements(driver, this);
+        PageFactory.initElements(BaseSteps.getDriver(), this);
 
 
     }

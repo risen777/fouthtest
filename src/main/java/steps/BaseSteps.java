@@ -1,12 +1,15 @@
 package steps;
 
 
+import cucumber.api.java.After;
+import cucumber.api.java.Before;
+
 import org.junit.Assert;
-import org.junit.BeforeClass;
+
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.junit.AfterClass;
+
 
 import pages.BasePage;
 import ru.yandex.qatools.allure.annotations.Step;
@@ -32,7 +35,7 @@ public class BaseSteps {
     public static Properties properties = TestProperties.getInstance().getProperties();
 
 
-    @BeforeClass
+    @Before
     public static void setUp() throws Exception {
         switch (properties.getProperty("browser")){
             case "firefox":
@@ -54,7 +57,7 @@ public class BaseSteps {
         driver.manage().window().maximize();
     }
 
-   @AfterClass
+  @After
     public static void tearDown() throws Exception {
         driver.quit();
     }
