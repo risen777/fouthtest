@@ -2,6 +2,7 @@ package pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import steps.BaseSteps;
 
@@ -20,7 +21,10 @@ public class BasePage {
 
 
     }
-
+    public void fillField(WebElement field, String value){
+        field.clear();
+        field.sendKeys(value);
+    }
 
     //следующую страницу
     public void nextPage() {

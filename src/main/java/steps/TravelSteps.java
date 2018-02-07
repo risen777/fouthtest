@@ -9,7 +9,7 @@ import pages.TravelPage;
 public class TravelSteps{
 
 
-    @Step("выполнено нажатие на кнопку отправить заявку")
+    @Step("выполнено нажатие на кнопку Оформить онлайн")
     public void stepSendAppButton(){
         new TravelPage(BaseSteps.getDriver()).sendButton.click();
 

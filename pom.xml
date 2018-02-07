@@ -67,17 +67,7 @@
 
                     </argLine>
 
-                    <properties>
 
-                        <property>
-
-                            <name>listener</name>
-
-                            <value>util.AllureReporter</value>
-
-                        </property>
-
-                    </properties>
 
                 </configuration>
 
